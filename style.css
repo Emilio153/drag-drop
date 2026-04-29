@@ -1,0 +1,144 @@
+/* Configuraciones Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+}
+
+/* Contenedor de Columnas */
+.alumnos {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.column {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 1rem;
+    min-height: 400px; /* Importante para poder soltar elementos */
+}
+
+.column h2 {
+    text-align: center;
+    color: #34495e;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Listas y Elementos Arrastrables */
+.lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-height: 350px; /* Asegura que haya área de drop aunque esté vacía */
+}
+
+.alumno {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: grab;
+    border: 1px solid rgba(0,0,0,0.1);
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s;
+    user-select: none;
+}
+
+.alumno:active {
+    cursor: grabbing;
+}
+
+/* Efecto visual al arrastrar */
+.alumno[draggable="true"]:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Secciones de Control y Botones */
+.control {
+    margin: 1rem 0;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+#add {
+    background-color: #27ae60;
+}
+
+#add:hover {
+    background-color: #219150;
+}
+
+/* Formulario */
+#formulario {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+#form label {
+    display: inline-block;
+    width: 80px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    padding: 10px 0;
+}
