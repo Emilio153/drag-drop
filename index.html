@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="alumno.png"/>
+        <img src="persona.png"/>
         <h1>Panel Alumnos</h1>
     </header>
 
@@ -17,7 +17,7 @@
             <article class="column" id="all"> 
                 <h2>Alumnos</h2>
                 <ul id="listaAll" class="lista">
-                    <li draggable="true" class="alumno">Pepito Martínez (32)</li>
+                    <!-- Se ha eliminado el nombre por defecto -->
                 </ul>
             </article>
             <article class="column" id="selecteds">
@@ -25,26 +25,37 @@
                 <ul id="listaSelected" class="lista"></ul>
             </article>
         </section>
+
         <section class="control">
             <button id="new" class="btn">Nuevo</button>
             <button id="show_selected" class="btn">Mostrar seleccionados</button>
         </section>
+
         <section id="formulario">
+            <!-- Formulario ahora envuelto para facilitar el centrado -->
             <form id="form">
-                <label for="nombre">Nombre: </label>
-                <input type="text" id="nombre" /> <br>
-                <label for="apellidos">Apellidos: </label>
-                <input type="text" id="apellidos" /> <br>
-                <label for="edad">Edad: </label>
-                <input type="number" id="edad" /> <br>
-                <button id="add" class="btn">Añadir</button>
-                <input type="reset" class="btn" />
+                <div class="input-group">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" />
+                </div>
+                <div class="input-group">
+                    <label for="apellidos">Apellidos: </label>
+                    <input type="text" id="apellidos" />
+                </div>
+                <div class="input-group">
+                    <label for="edad">Edad: </label>
+                    <input type="number" id="edad" />
+                </div>
+                <div class="form-buttons">
+                    <button id="add" class="btn">Añadir</button>
+                    <input type="reset" class="btn" />
+                </div>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>Octavio Montero Oliva. DWECL. 2026</p>
+        <p>Emilio de la Orden Cruz. 2026</p>
     </footer>
 </body>
 </html>

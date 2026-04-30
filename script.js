@@ -70,7 +70,7 @@ document.getElementById("add").addEventListener("click", (e)=>{
 })
 
 function generarColorAleatorio(){
-    let colores = ["lightblue","lightcoral", "lightcyan", "lightgoldenrodyellow", "lightgray", "lightgreen", "lightpink", "lightsalmon", "lightseagreen", "lightskyblue"];
+    let colores = ["lightblue","lightcoral", "lightgreen", "lightskyblue"];
     let num = Math.floor(Math.random() * colores.length);
 
     return colores[num];
@@ -84,5 +84,6 @@ document.getElementById("show_selected").addEventListener("click", ()=>{
 
     items.forEach(alumno => alumnos += alumno.textContent + ", ");
     window.alert("Los alumnos seleccionados son: " + alumnos);
+    // document.getElementById("listaSelected").innerHTML = "";
 
 });
